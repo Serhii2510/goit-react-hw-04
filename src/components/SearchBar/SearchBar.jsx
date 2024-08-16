@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { FaSistrix } from 'react-icons/fa';
 import css from './SearchBar.module.css';
 
 const notify = () => toast.error('Please, fill your topic for searching...');
@@ -24,6 +25,9 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className={css.header}>
       <form onSubmit={handleSubmit} className={css.form}>
+        <button className={css.iconBtn}>
+          <FaSistrix className={css.icon} />
+        </button>
         <input
           className={css.input}
           type="text"
