@@ -25,7 +25,7 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <header className={css.header}>
       <form onSubmit={handleSubmit} className={css.form}>
-        <button className={css.iconBtn}>
+        <button className={css.iconBtn} type="submit">
           <FaSistrix className={css.icon} />
         </button>
         <input
